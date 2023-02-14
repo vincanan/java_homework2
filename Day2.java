@@ -38,7 +38,10 @@ class Exercise4_3 {
     public static void main(String[] args) {
         int sum = 0;
         int totalSum = 0;
-        /*빈 칸*/
+        for(int i=1;i <=10; i++){
+            1i+ 2i
+        }
+        /*빈 모르겠음 칸* /
         System.out.println("totalSum="+totalSum);
     }
 }
@@ -63,11 +66,17 @@ class Exercise4_4 {
 //4-5. 다음의 for문을 while문으로 변경하세요.
 public class Exercise4_5 {
     public static void main(String[] args) {
-        for(int i=0; i<=10; i++) {
-            for(int j=0; j<=i; j++)
-                System.out.print("*");
+        int i=0;
+        while (i<=10){
+            int j=0;
+            while(j<=i) {
+                System.out.println("*");
+                j++;
+            }
             System.out.println();
+            i++;
         }
+
     }//end of main
 } // end of class
 
@@ -76,9 +85,16 @@ public class Exercise4_5 {
 //4-6. 두 개의 주사위를 던졌을 때, 눈의 합이 6이 되는 모든 경우의 수를 출력하는 프로그램을 작성하세요.
 class Exercise4_6 {
     public static void main(String[] args) {
-        /*빈 칸*/
+        for(int i=1; i<=6; i++){
+            for(int k=1; k<=6; k++){
+                if(i+k ==6){
+                    System.out.println((i+"+"+k));
+                }
+            }
+        }
     }
 }
+
 
 
 
@@ -90,7 +106,7 @@ class Exercise4_7 {
         int sum = 0;
 
         for (int i = 0; i < str.length(); i++) {
-            /*빈 칸*/
+            sum += i;
         }
 
         System.out.println("sum=" + sum);
@@ -102,7 +118,7 @@ class Exercise4_7 {
 //4-8. Math.random()을 이용해서 1부터 6 사이의 임의의 정수를 변수 value에 저장하는 코드를 완성하세요.
 class Exercise4_8{
     public static void main(String[] args){
-        int value = (/*빈 칸*/);
+        int value = (int)(Math.random() * 6) +1;
         System.out.println("value:"+value);
     }
 }
@@ -131,9 +147,15 @@ public class Exercise4_9 {
 class Exercise4_10 {
     public static void main(String[] args) {
         // 1~100사이의 임의의 값을 얻어서  answer에 저장한다.
-        int answer = /*빈 칸*/;
-        int input = 0; //사용자입력을 저장할 공간
-        int count = 0; //시도횟수를 세기위한 변수
+        int answer = (int)(Math.random() * 100) +1;
+        int input = if (answer > input) {
+            System.out.println("down!");
+        } else if (answer < input) {
+            System.out.println("up");
+        } else {
+                System.out.println("정답입니다");
+                System.out.println("시도횟수:" );}
+        int count =
 
         // 화면으로 부터 사용자입력을 받기 위해서 Scanner클래스 사용
         java.util.Scanner s = new java.util.Scanner(System.in);
